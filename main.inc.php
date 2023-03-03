@@ -23,6 +23,7 @@ function dwnfb_loc_end_picture()
   $template->set_prefilter('picture', 'dwnfb_picture_prefilter');
   $template->set_filename('dwnfb_picture', realpath(DWNFB_PATH.'download_buttons.tpl'));
   $template->assign_var_from_handle('DWNFB_PICTURE_CONTENT', 'dwnfb_picture');
+  load_language('plugin.lang', DWNFB_PATH);
 
 }
 
